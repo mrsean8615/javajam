@@ -13,38 +13,46 @@
     </head>
     <!--I am fully aware of the tags that modifiy html elements. However, css is just 1000 times better so I hope that's okay.-->
     <body>
-        <header>JavaJam Coffee Bar</header>
-        <nav>
-            <!--Use <b> instead of font-weight for same effect.-->
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="menu.html"><li class="active">Menu</li></a>
-                <a href="music.html"><li>Music</li></a>
-                <a href="jobs.html"><li>Jobs</li></a>
-            </ul>
-        </nav>
-        <main>
-            <div class="menu-container">
-                <h2>Coffee at JavaJam</h2>
-                <!--Used font-weight instead of <b>-->
-                <dl>
-                    <div>
-                        <dt>Just Java</dt>
-                        <dd>Regular house blend, decaffeinated coffee, or flavor of the day.<br><br><span>Endless Cup $3.50</span></dd>
-                    </div>
-                    <div>
-                        <dt>Cafe au Lait</dt>
-                        <dd>House blended coffee infused into a smooth, steamed milk.<br><br><span>Single $4.00 <br>Double $5.00</span></dd>
-                    </div>
-                    <div>
-                        <dt>Iced Cappuccino</dt>
-                        <dd>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br><br><span>Single $5.00 <br> Double $6.50</span></dd>
+        <div class="wrapper">
+            <header>JavaJam Coffee Bar</header>
+            <nav>
+                <!--Use <b> instead of font-weight for same effect.-->
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="menu.html"><li class="active">Menu</li></a>
+                    <a href="music.html"><li>Music</li></a>
+                    <a href="jobs.html"><li>Jobs</li></a>
+                </ul>
+            </nav>
+            <main>
+                <div class="menu-container">
+                    <div class="menu-title">
+                        <h2>Coffee at JavaJam</h2>
                     </div>
 
-                </dl>
-            </div>
-        </main>
-        <footer></footer>
+                    <!--Used font-weight instead of <b>-->
+                    <div class="flex-container">
+                        <div>
+                            <dt>Just Java</dt>
+                            <dd>Regular house blend, decaffeinated coffee, or flavor of the day.<br><br><span>Endless Cup $3.50</span></dd>
+                        </div>
+                        <div>
+                            <dt>Cafe au Lait</dt>
+                            <dd>House blended coffee infused into a smooth, steamed milk.<br><br><span>Single $4.00 <br>Double $5.00</span></dd>
+                        </div>
+                        <div>
+                            <dt>Iced Cappuccino</dt>
+                            <dd>Sweetened espresso blended with icy-cold milk and served in a chilled glass.<br><br><span>Single $5.00 <br> Double $6.50</span></dd>
+                        </div>
+
+                    </div>
+                    <div class="menu-img">
+                        <img src="img/mugs.jpg">
+                    </div>
+                </div>
+            </main>
+            <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>
+        </div>
         <script src="js/scripts.js"></script>
     </body>
 </html>

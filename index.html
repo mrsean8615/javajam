@@ -13,35 +13,42 @@
     </head>
     <!--I am fully aware of the tags that modifiy html elements. However, css is just 1000 times better so I hope that's okay.-->
     <body>
-        <header>JavaJam Coffee Bar</header>
-        <nav>
-            <!--Use <b> instead of font-weight for same effect.-->
-            <ul>
-                <a href="index.html"><li class="active">Home</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="music.html"><li>Music</li></a>
-                <a href="jobs.html"><li>Jobs</li></a>
-            </ul>
-        </nav>
-        <main>
-            <div class="container">
-                <h2>Come to JavaJam</h2>
-                <p>Friendly and economical -- Come to JavaJam if you are looking for a place to take a well deserved break. Enjoy our specialty coffee and make sure to try our delicious snacks.</p>
+        <div class="wrapper" id="home">
+            <header>JavaJam Coffee Bar</header>
+            <nav>
+                <!--Use <b> instead of font-weight for same effect.-->
                 <ul>
-                    <li>Specialty Coffee and Organic Tea</li>
-                    <li>Bagels, Muffins, and Gluten-free Pastries</li>
-                    <li>Organic Salads</li>
-                    <li>Music and Poetry Readings</li>
-                    <li>Open Mic Night</li>
+                    <a href="index.html"><li class="active">Home</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="music.html"><li>Music</li></a>
+                    <a href="jobs.html"><li>Jobs</li></a>
                 </ul>
-                <div class="locale-info">
-                    <p>12010 Garrett Bay Road <br>
-                    Ellison Bay, WI 54210 <br>
-                    888-555-5555</p>
-                </div>
+            </nav>
+            <div>
+                <img src="img/hero.jpg">
             </div>
-        </main>
-        <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>
+            <main>
+                <div class="container">
+                    <h2>Follow the winding road to JavaJam!</h2>
+                    <p>We're a little out of the way, but take a drive in the country down Garrett Bay Road to JavaJam today! Indulge in our locally roasted free-trade coffee and home-made pastries. You'll feel right at home at JavaJam!</p>
+                    <p>Friendly and eclectic  -- JavaJam Coffee Bar is the perfect place to take a break, enjoy a  refreshing beverage, and have a snack or light meal.</p>
+                    <ul>
+                        <li>Specialty Coffee and Organic Tea</li>
+                        <li>Bagels, Muffins, and Gluten-free Pastries</li>
+                        <li>Organic Salads</li>
+                        <li>Music and Poetry Readings</li>
+                        <li>Open Mic Night</li>
+                    </ul>
+                    <div class="locale-info">
+                        <p>12010 Garrett Bay Road <br>
+                        Ellison Bay, WI 54210 <br>
+                        888-555-5555</p>
+                    </div>
+                </div>
+            </main>
+            <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>
+        </div>
+
         <script src="js/scripts.js"></script>
     </body>
 </html>

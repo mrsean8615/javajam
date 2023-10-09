@@ -13,22 +13,35 @@
     </head>
     <!--I am fully aware of the tags that modifiy html elements. However, css is just 1000 times better so I hope that's okay.-->
     <body>
-        <header>JavaJam Coffee Bar</header>
-        <nav>
-            <!--Use <b> instead of font-weight for same effect.-->
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="music.html"><li class="active">Music</li></a>
-                <a href="jobs.html"><li>Jobs</li></a>
-            </ul>
-        </nav>
-        <main>
-            <div>
-                
-            </div>
-        </main>
-        <footer></footer>
+        <div class="wrapper">
+            <header>JavaJam Coffee Bar</header>
+            <nav>
+                <!--Use <b> instead of font-weight for same effect.-->
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="music.html"><li class="active">Music</li></a>
+                    <a href="jobs.html"><li>Jobs</li></a>
+                </ul>
+            </nav>
+            <main>
+                <div class="music-container">
+                    <h2>Music at JavaJam</h2>
+                    <p>The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some music you won't want to miss!</p>
+                    <div class="music-info">
+                        <div><h2>January</h2></div>
+                        <img src="img/melanie.jpg" alt="melanie">
+                        <p>Melanie Morris entertains with her melodic folk style.</p>
+                    </div>
+                    <div class="music-info">
+                        <div><h2>February</h2></div>
+                        <img src="img/gregthumb.jpg" alt="greg thumb">
+                        <p>Tahoe Greg is back from his tour. New songs. New stories.</p>
+                    </div>
+                </div>
+            </main>
+            <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>
+        </div>
         <script src="js/scripts.js"></script>
     </body>
 </html>
