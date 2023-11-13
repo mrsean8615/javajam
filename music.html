@@ -8,12 +8,13 @@
         <meta name="description" content="JavaJam Coffee Bar Case Study">
         <meta name="author" content="Sean Payne">
         <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="#">
     </head>
     <!--I am fully aware of the tags that modifiy html elements. However, css is just 1000 times better so I hope that's okay.-->
     <body>
-        <div class="wrapper">
+        <div class="wrapper" id="music">
             <nav>
                 <img src="img/coffeelogo.jpg" alt="coffee logo">
                 <!--Use <b> instead of font-weight for same effect.-->
@@ -30,7 +31,7 @@
                 <div class="music-container">
                     <img src="img/heroguitar.jpg" alt="guitar">
                     <h2>Music at JavaJam</h2>
-                    <p>The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some music you won't want to miss!</p>
+                    <p id="mp">The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some music you won't want to miss!</p>
                     <div class="music-info">
                         <div><h2>January</h2></div>
                         <img src="img/melanie.jpg" alt="melanie">
@@ -42,9 +43,18 @@
                         <p>Tahoe Greg is back from his tour. New songs. New stories.</p>
                     </div>
                 </div>
+
             </main>
+            <div id="pop-up">
+                <div id="input-box">
+                    <h3 id="in-title">Enter your age:</h3>
+                    <input id="age-input" type="number" placeholder="Enter your age:" min="0" max="120" step="1">
+                    <button id="sb-btn">Submit</button>
+                </div>
+            </div>
             <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>
         </div>
         <script src="js/scripts.js"></script>
+
     </body>
 </html>
