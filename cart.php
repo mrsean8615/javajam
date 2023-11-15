@@ -1,3 +1,28 @@
+<?php
+
+
+if(isset($_POST['price'])) {
+    $size = $_POST['size'];
+    $price = $_POST['price'];
+    $img = $_POST['img'];
+    $title = $_POST['product-name'];
+
+    $result = '
+            <div class="item">
+                <div class="item-form">
+                    <h2 class="title">' . $title . '</h2>
+                    <p class="description">Size: ' . $size . '<br>Price: ' . $price . '</p>
+                    <img src="'. $img . '" alt="item">
+                    <button class="submit-btn" type="submit">Remove From Cart</button>
+                </div>
+            </div>';
+} else {
+    $result = '<h2> Your cart is empty. </h2>';
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,27 +55,12 @@
                 <header>JavaJam Coffee Bar</header>
                 <a href="cart.php"><img src="img/cart.png" alt="shopping cart" class="shopping-cart"></a>
             </div>
+
+
             <main>
                 <div class="container">
-                    <div>
-                        <img src="img/hero.jpg" alt="winding road">
-                    </div>
-                    <h2>Follow the winding road to JavaJam!</h2>
-                    <p>We're a little out of the way, but take a drive in the country down Garrett Bay Road to JavaJam today! Indulge in our locally roasted free-trade coffee and home-made pastries. You'll feel right at home at JavaJam!</p>
-                    <p>Friendly and eclectic  -- JavaJam Coffee Bar is the perfect place to take a break, enjoy a  refreshing beverage, and have a snack or light meal.</p>
-                    <h2>JavaJam Features:</h2>
-                    <ul>
-                        <li>Specialty Coffee and Organic Tea</li>
-                        <li>Bagels, Muffins, and Gluten-free Pastries</li>
-                        <li>Organic Salads</li>
-                        <li>Music and Poetry Readings</li>
-                        <li>Open Mic Night</li>
-                    </ul>
-                    <div class="locale-info">
-                        <p>12010 Garrett Bay Road <br>
-                        Ellison Bay, WI 54210 <br>
-                        888-555-5555</p>
-                    </div>
+
+                    <?php echo $result ?>
                 </div>
             </main>
             <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>

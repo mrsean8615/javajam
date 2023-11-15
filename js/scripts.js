@@ -4,7 +4,8 @@ res.style.color = "white";
 
 function lastD() {
     const date = new Date(document.lastModified);
-    $('footer').append('<span>Last Modified: ' + date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate() + '</span>');
+    const month = date.getMonth() + 1
+    $('footer').append('<span>Last Modified: ' + date.getFullYear() + '/' + month + '/' + date.getDate() + '</span>');
 }
 lastD();
 

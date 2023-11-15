@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sean Payne &mdash; JavaJam Coffee House</title>
+        <meta name="description" content="JavaJam Coffee Bar Case Study">
+        <meta name="author" content="Sean Payne">
+        <meta name="keywords" content="Homework, USU, Data Analytics and Information Systems">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="#">
+    </head>
+    <!--I am fully aware of the tags that modifiy html elements. However, css is just 1000 times better so I hope that's okay.-->
+    <body>
+        <div class="wrapper" id="home">
+            <nav>
+                <img src="img/coffeelogo.jpg" alt="coffee logo">
+                <!--Use <b> instead of font-weight for same effect.-->
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="music.html"><li>Music</li></a>
+                    <a href="jobs.html"><li>Jobs</li></a>
+                    <a href="gear.html"><li class="active">Gear</li></a>
+                </ul>
+            </nav>
+            <div class="head">
+                <header>JavaJam Coffee Bar</header>
+                <a href="cart.php"><img src="img/cart.png" alt="shopping cart" class="shopping-cart"></a>
+            </div>
+
+
+            <main>
+                <div class="container">
+                    <div>
+                        <img src="img/herocouch.jpg" alt="couch">
+                    </div>
+                    <h2>JavaJam Gear</h2>
+                    <p>JavaJam gear not only looks good, it's good to your wallet too!</p>
+                    <p>Get a 10% discount when you wear a JavaJam shirt or bring your JavaJam mug!</p>
+                    <div class="catalog">
+                        <div class="item">
+                            <form action="cart.php" method="post">
+                                <div class="item-form">
+                                    <h2 class="title"><input hidden type="text" name="product-name" value="JavaJame Shirt"> JavaJam Shirt</h2>
+                                    <p class="description">JavaJam Shirts are comfortable to wear to school and around town. 100% cotton. <input hidden type="text" value="XL" name="size">XL only. <input hidden type="text" value="$14.95" name="price">$14.95</span></p>
+                                    <img src="img/javashirt.jpg" alt="shirt">
+                                    <input hidden type="text" value="img/javashirt.jpg" name="img">
+                                    <button class="submit-btn" type="submit">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item">
+                            <form action="cart.php" method="post">
+                                <div class="item-form">
+                                    <h2 class="title"><input hidden type="text" name="product-name" value="JavaJame Shirt"> JavaJam Shirt</h2>
+                                    <p class="description">JavaJam Shirts are comfortable to wear to school and around town. 100% cotton. <input hidden type="text" value="XL" name="size">XL only. <input hidden type="text" value="$14.95" name="price">$14.95</span></p>
+                                    <img src="img/javashirt.jpg" alt="shirt">
+                                    <input hidden type="text" value="img/javashirt.jpg" name="img">
+                                    <button class="submit-btn" type="submit">Add to Cart</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer><p>Copyright © 2023 JavaJam Coffee Bar <br> <a href="#">Sean@payne.com</a></p></footer>
+        </div>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
