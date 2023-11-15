@@ -13,12 +13,12 @@ if(isset($_POST['price'])) {
                     <h2 class="title">' . $title . '</h2>
                     <p class="description">Size: ' . $size . '<br>Price: ' . $price . '</p>
                     <img src="'. $img . '" alt="item">
-                    <button class="submit-btn" type="submit">Remove From Cart</button>
+                    <button class="submit-btn" id="clear" type="submit">Remove From Cart</button>
                 </div>
             </div>';
 } else {
     $result = '<h2> Your cart is empty. </h2>';
-}
+};
 
 
 ?>
